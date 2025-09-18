@@ -6,3 +6,7 @@ updates:
       - dependency-name: "piper1-gpl"
     schedule:
       interval: "weekly"
+  - package-ecosystem: "swift" 
+    directory: "/"
+    schedule:
+      interval: "weekly"
