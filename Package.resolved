@@ -3,9 +3,10 @@
     {
       "identity" : "espeak-ng-spm",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/espeak-ng/espeak-ng-spm",
+      "location" : "https://github.com/IhorShevchuk/espeak-ng-spm.git",
       "state" : {
-        "revision" : "d1a0e917cf23b3f77efa4c9c96549e737cbc0987"
+        "revision" : "d1a0e917cf23b3f77efa4c9c96549e737cbc0987",
+        "version" : "2025.9.17"
       }
     }
   ],
