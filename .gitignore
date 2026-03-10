@@ -90,3 +90,5 @@ fastlane/test_output
 iOSInjectionProject/
 .swiftpm/xcode
 .DS_Store
+Derived
+piper1-gpl.xcodeproj
