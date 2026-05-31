@@ -2,6 +2,7 @@ version: 2
 updates:
   - package-ecosystem: "gitsubmodule"
     directory: "/"
+    target-branch: "feature/piper_objc"
     allow:
       - dependency-name: "piper1-gpl"
     schedule:
