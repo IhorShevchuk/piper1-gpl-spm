@@ -28,16 +28,34 @@ let package = Package(
                 sources: [
                     "piper1-gpl/libpiper/src/piper.cpp"
                 ],
-                publicHeadersPath: "piper1-gpl/libpiper/include",
+                publicHeadersPath: "piper-spm/public",
                 cxxSettings: [
-                    .headerSearchPath("piper-spm/headers")
+                    .headerSearchPath("piper-spm/headers"),
+                    .headerSearchPath("piper1-gpl/libpiper/include")
                 ]
                ),
+        .target(name: "example-c",
+                dependencies: [
+                    .target(name: "piper")
+                ],
+                path: "examples/example-c",
+                swiftSettings: [
+                    .interoperabilityMode(.C),
+                ]
+        ),
+        .target(name: "example-cpp",
+                dependencies: [
+                    .target(name: "piper")
+                ],
+                path: "examples/example-cpp",
+                swiftSettings: [
+                    .interoperabilityMode(.Cxx),
+                ]
+        ),
         .binaryTarget(name: "onnxruntime",
                             url: "https://download.onnxruntime.ai/pod-archive-onnxruntime-c-1.22.0.zip",
                             // SHA256 checksum
                             checksum: "90d9de5a139087a6b05a18125d01d01d198820e1731e6f0f11b38749b2ab181f")
     ],
-    cxxLanguageStandard: .cxx17
+    cxxLanguageStandard: .cxx17,
 )
-
