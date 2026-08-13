@@ -15,7 +15,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/IhorShevchuk/espeak-ng-spm.git",
-                 from: "2025.9.17")
+                 from: "2026.04.07")
     ],
     targets: [
         .target(name: "piper",
