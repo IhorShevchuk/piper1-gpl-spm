@@ -15,7 +15,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/IhorShevchuk/espeak-ng-spm.git",
-                 from: "2026.04.06")
+                 from: "2025.9.17")
     ],
     targets: [
         .target(name: "piper",
@@ -56,5 +56,5 @@ let package = Package(
                             // SHA256 checksum
                             checksum: "90d9de5a139087a6b05a18125d01d01d198820e1731e6f0f11b38749b2ab181f")
     ],
-    cxxLanguageStandard: .cxx17,
+    cxxLanguageStandard: .cxx17
 )
